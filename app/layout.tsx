@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Lulu - movie streaming app",
   description:
     "Lulu is your goto for the best streaming movies, TV shows and sporting events.",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 function RootLayout({ children }: { children: React.ReactNode }) {
