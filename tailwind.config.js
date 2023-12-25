@@ -1,3 +1,5 @@
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -12,6 +14,9 @@ module.exports = {
         containerMd: "calc(100% - 64px)",
         container: "calc(100% - 96px)",
         containerXl: "1280px",
+      },
+      fontFamily: {
+        sans: ["var(--font-body)", ...fontFamily.sans],
       },
     },
   },
