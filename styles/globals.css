@@ -17,3 +17,11 @@
 html {
   scrollbar-width: none;
 }
+
+:root {
+  --primary: #1ce783;
+  --serene-slate: #586174;
+  --crystal-veil: #f6f7f8;
+  --abyssal-nightfall: #040405;
+  --radiant-jade: #00ed82;
+}

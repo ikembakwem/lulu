@@ -15,6 +15,14 @@ module.exports = {
         container: "calc(100% - 96px)",
         containerXl: "1280px",
       },
+
+      colors: {
+        primary: "var(--primary)",
+        crystalVeil: "var(--crystal-veil)",
+        abyssalNightfall: "var(--abyssal-nightfall)",
+        sereneSlate: "var(--serene-slate)",
+        radiantJade: "var(--radiant-jade)",
+      },
       fontFamily: {
         sans: ["var(--font-body)", ...fontFamily.sans],
       },
