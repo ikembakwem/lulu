@@ -8,6 +8,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        medium: "0 7px 6px rgba(0, 0, 0, 0.16)",
+      },
+      colors: {
+        primary: "var(--primary)",
+        crystalVeil: "var(--crystal-veil)",
+        abyssalNightfall: "var(--abyssal-nightfall)",
+        sereneSlate: "var(--serene-slate)",
+        radiantJade: "var(--radiant-jade)",
+        arcticGlow: "var(--arctic-glow)",
+      },
+      fontFamily: {
+        sans: ["var(--font-body)", ...fontFamily.sans],
+      },
       maxWidth: {
         containerXs: "calc(100% - 24px)",
         containerSm: "calc(100% - 48px)",
@@ -15,16 +29,9 @@ module.exports = {
         container: "calc(100% - 96px)",
         containerXl: "1280px",
       },
-
-      colors: {
-        primary: "var(--primary)",
-        crystalVeil: "var(--crystal-veil)",
-        abyssalNightfall: "var(--abyssal-nightfall)",
-        sereneSlate: "var(--serene-slate)",
-        radiantJade: "var(--radiant-jade)",
-      },
-      fontFamily: {
-        sans: ["var(--font-body)", ...fontFamily.sans],
+      width: {
+        menuButton: "calc(100% - 16px)",
+        ctaButton: "calc(100% - 8px)",
       },
     },
   },
