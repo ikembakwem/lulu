@@ -18,6 +18,9 @@ module.exports = {
         sereneSlate: "var(--serene-slate)",
         radiantJade: "var(--radiant-jade)",
         arcticGlow: "var(--arctic-glow)",
+        smokyHarbor: "var(--smoky-harbor)",
+        duskSteel: "var(--dusk-steel)",
+        onyxVelvet: "var(--onyx-velvet)",
       },
       fontFamily: {
         sans: ["var(--font-body)", ...fontFamily.sans],

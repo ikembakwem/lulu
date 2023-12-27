@@ -40,7 +40,7 @@ export const Header = () => {
           </a>
           <div className="lg:hidden">
             <button
-              className="flex justify-center items-center rounded-lg bg-[#323843] text-white cursor-pointer py-3 px-4"
+              className="flex justify-center items-center rounded-lg bg-smokyHarbor text-white cursor-pointer py-3 px-4"
               onClick={() => setIsOpen((prev) => !prev)}
             >
               <HamburgerIcon />
@@ -48,7 +48,7 @@ export const Header = () => {
             <ul
               className={`${
                 isOpen ? "flex" : "hidden"
-              } flex-col whitespace-nowrap text-sm w-72 absolute top-[50px] bg-[#272c34] rounded-lg shadow-medium right-5 py-1`}
+              } flex-col whitespace-nowrap text-sm w-72 absolute top-[50px] bg-duskSteel rounded-lg shadow-medium right-5 py-1`}
             >
               <li>
                 <a
@@ -67,7 +67,7 @@ export const Header = () => {
                 </a>
               </li>
               <li>
-                <button className="mx-1 font-semibold leading-none uppercase inline-flex items-center justify-center cursor-pointer h-12 w-ctaButton px-6 bg-[#0b0c0f] rounded-md">
+                <button className="mx-1 font-semibold leading-none uppercase inline-flex items-center justify-center cursor-pointer h-12 w-ctaButton px-6 bg-onyxVelvet rounded-md">
                   <span className="w-full ">GET ALL THREE</span>
                 </button>
               </li>
