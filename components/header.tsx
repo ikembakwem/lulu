@@ -23,7 +23,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className="absolute top-0 text-arcticGlow w-full min-w-[320px]">
+    <header className="absolute top-0 text-arcticGlow w-full min-w-[320px] z-10">
       <nav className="h-[74px] flex relative">
         <div className="flex items-center pl-6 text-primary">
           <span className="h-6">

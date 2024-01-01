@@ -11,6 +11,10 @@ module.exports = {
       boxShadow: {
         medium: "0 7px 6px rgba(0, 0, 0, 0.16)",
       },
+      backgroundImage: {
+        backdropWrapper: "linear-gradient(135deg,#231437,#2c385e 50%,#336e6b)",
+        backdropImageContainer: `linear-gradient(0deg, transparent 60%, rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0.4) 100%)`,
+      },
       colors: {
         primary: "var(--primary)",
         crystalVeil: "var(--crystal-veil)",
