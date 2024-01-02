@@ -12,8 +12,7 @@ module.exports = {
         medium: "0 7px 6px rgba(0, 0, 0, 0.16)",
       },
       backgroundImage: {
-        backdropWrapper: "linear-gradient(135deg,#231437,#2c385e 50%,#336e6b)",
-        backdropImageContainer: `linear-gradient(0deg, transparent 60%, rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0.4) 100%)`,
+        backdropGradient: "linear-gradient(135deg,#231437,#2c385e 50%,#336e6b)",
       },
       colors: {
         primary: "var(--primary)",
@@ -25,6 +24,7 @@ module.exports = {
         smokyHarbor: "var(--smoky-harbor)",
         duskSteel: "var(--dusk-steel)",
         onyxVelvet: "var(--onyx-velvet)",
+        backdropImageGradient: `linear-gradient(0deg, transparent 60%, rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0.4) 100%)`,
       },
       fontFamily: {
         sans: ["var(--font-body)", ...fontFamily.sans],
