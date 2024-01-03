@@ -1,4 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
+
+import { Container } from "./container";
+import { HeroCard } from "./hero-card";
+
 export const Hero = () => {
   return (
     <section>
@@ -10,7 +14,16 @@ export const Hero = () => {
             className="absolute top-0 left-0 w-full h-full object-cover"
           />
         </div>
-        <div></div>
+        <div className="z-10">
+          <Container>
+            <div className="p-10">
+              <div className="grid grid-cols-2 gap-x-4 mt-4">
+                <HeroCard />
+                <HeroCard />
+              </div>
+            </div>
+          </Container>
+        </div>
       </div>
     </section>
   );

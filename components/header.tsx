@@ -48,7 +48,7 @@ export const Header = () => {
             <ul
               className={`${
                 isOpen ? "flex" : "hidden"
-              } flex-col whitespace-nowrap font-medium leading-[1.125] tracking-[0.25px] w-72 absolute top-[50px] bg-duskSteel rounded-lg shadow-medium right-5 py-1`}
+              } flex-col whitespace-nowrap text-sm font-medium leading-[1.125] tracking-[0.25px] w-72 absolute top-[50px] bg-duskSteel rounded-lg shadow-medium right-5 py-1`}
             >
               <li>
                 <a
