@@ -2,10 +2,11 @@
 
 import HamburgerIcon from "@assets/icons/hamburger.svg";
 import Logo from "@assets/icons/hulu-logo.svg";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLUListElement>(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -21,6 +22,20 @@ export const Header = () => {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
     <header className="absolute top-0 text-arcticGlow w-full min-w-[320px] z-10">
@@ -46,6 +61,7 @@ export const Header = () => {
               <HamburgerIcon />
             </button>
             <ul
+              ref={menuRef}
               className={`${
                 isOpen ? "flex" : "hidden"
               } flex-col whitespace-nowrap text-sm font-medium leading-[1.125] tracking-[0.25px] w-72 absolute top-[50px] bg-duskSteel rounded-lg shadow-medium right-5 py-1`}
