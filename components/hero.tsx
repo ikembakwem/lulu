@@ -1,7 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { Container } from "./container";
-import { HeroCard } from "./hero-card";
+import { HeroCardData, HeroCard } from "./hero-card";
+
+const cardsData: HeroCardData[] = [
+  {
+    title: "DISNEY BUNDLE DUO BASIC",
+    imgUrl: "/assets/images/hulu-plus-disney.png",
+    info: "Both with ads, for $9.99/month.",
+    cta: "GET THEM BOTH",
+  },
+  {
+    title: "DISNEY BUNDLE TRIO BASIC",
+    imgUrl: "/assets/images/hulu-plus-espn.png",
+    info: "All with ads, for $14.99/month.",
+    cta: "GET ALL THREE",
+  },
+];
 
 export const Hero = () => {
   return (
@@ -16,10 +31,10 @@ export const Hero = () => {
         </div>
         <div className="z-[2]">
           <Container>
-            <div className="p-10">
+            <div className="p-4 sm:p-10">
               <div className="grid grid-cols-2 gap-x-4 mt-4">
-                <HeroCard />
-                <HeroCard />
+                <HeroCard data={cardsData[0]} />
+                <HeroCard data={cardsData[1]} />
               </div>
             </div>
           </Container>
