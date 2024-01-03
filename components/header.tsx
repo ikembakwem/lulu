@@ -48,7 +48,7 @@ export const Header = () => {
             <ul
               className={`${
                 isOpen ? "flex" : "hidden"
-              } flex-col whitespace-nowrap text-sm w-72 absolute top-[50px] bg-duskSteel rounded-lg shadow-medium right-5 py-1`}
+              } flex-col whitespace-nowrap font-medium leading-[1.125] tracking-[0.25px] w-72 absolute top-[50px] bg-duskSteel rounded-lg shadow-medium right-5 py-1`}
             >
               <li>
                 <a
@@ -61,13 +61,13 @@ export const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="flex uppercase font-semibold justify-center items-center rounded-[4px] px-3 my-1 mx-2 w-menuButton h-10"
+                  className="flex uppercase justify-center items-center rounded-[4px] px-3 my-1 mx-2 w-menuButton h-10 font-semibold"
                 >
                   Login
                 </a>
               </li>
               <li>
-                <button className="mx-1 font-semibold leading-none uppercase inline-flex items-center justify-center cursor-pointer h-12 w-ctaButton px-6 bg-onyxVelvet rounded-md">
+                <button className="mx-1 leading-none uppercase text-white inline-flex items-center justify-center cursor-pointer h-12 w-ctaButton px-6 bg-onyxVelvet rounded-md tracking-[0.6px]">
                   <span className="w-full ">GET ALL THREE</span>
                 </button>
               </li>

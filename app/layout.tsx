@@ -2,8 +2,24 @@ import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
-const SF_Compact = localFont({
-  src: "../assets/fonts/sf-compact.otf",
+const awesomeFont = localFont({
+  src: [
+    {
+      path: "../assets/fonts/graphik-400.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/graphik-500.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/graphik-600.otf",
+      weight: "600",
+      style: "normal",
+    },
+  ],
   variable: "--font-body",
 });
 
@@ -18,7 +34,7 @@ export const metadata: Metadata = {
 
 function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${SF_Compact.variable}`}>
+    <html lang="en" className={`${awesomeFont.variable}`}>
       <body>{children}</body>
     </html>
   );
