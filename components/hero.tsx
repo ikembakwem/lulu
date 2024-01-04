@@ -30,14 +30,12 @@ export const Hero = () => {
           />
         </div>
         <div className="z-[2]">
-          <Container>
-            <div className="mt-10 py-6 px-3 sm:p-10">
-              <div className="grid grid-cols-2 gap-x-4 mt-4">
-                <HeroCard data={cardsData[0]} />
-                <HeroCard data={cardsData[1]} />
-              </div>
+          <div className="mt-10 md:mt-14 p-6 xs:p-10 md:p-0 mx-auto md:max-w-[570px] lg:max-w-[670px]">
+            <div className="grid grid-cols-2 gap-x-4 md:gap-x-8 pt-4">
+              <HeroCard data={cardsData[0]} imgWidth="not-full" />
+              <HeroCard data={cardsData[1]} />
             </div>
-          </Container>
+          </div>
         </div>
       </div>
     </section>

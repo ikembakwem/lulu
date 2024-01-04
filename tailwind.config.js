@@ -36,6 +36,9 @@ module.exports = {
         container: "calc(100% - 96px)",
         containerXl: "1280px",
       },
+      screens: {
+        xs: "390px",
+      },
       width: {
         menuButton: "calc(100% - 16px)",
         ctaButton: "calc(100% - 8px)",
