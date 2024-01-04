@@ -19,15 +19,15 @@ export const HeroCard = ({ data }: Props) => {
           {data.title}
         </h3>
       </div>
-      <div className="flex justify-center min-h-[46px] p-[3px]">
+      <div className="flex grow justify-center min-h-[46px] p-[3px]">
         <img src={data.imgUrl} alt="" className="object-contain" />
       </div>
       <p className="text-lg font-medium leading-tight mt-2 text-white">
         {data.info}
       </p>
-      <div className="mt-6">
-        <button className="inline-flex items-center justify-center cursor-pointer px-6 font-semibold text-sm leading-none uppercase min-w-[64px] rounded text-abyssalNightfall bg-primary h-10">
-          <span className="w-full">{data.cta}</span>
+      <div className="mt-6 w-full max-w-full">
+        <button className="w-full inline-flex items-center justify-center cursor-pointer px-6 font-semibold text-sm leading-none uppercase min-w-[64px] rounded text-abyssalNightfall bg-primary h-10">
+          <span>{data.cta}</span>
         </button>
       </div>
     </div>

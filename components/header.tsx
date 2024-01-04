@@ -7,6 +7,7 @@ import { useState, useEffect, useRef } from "react";
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLUListElement>(null);
+  const btnRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -25,8 +26,13 @@ export const Header = () => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent | TouchEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setIsOpen(false);
+      if (
+        (menuRef.current &&
+          isOpen &&
+          !menuRef.current.contains(event.target as Node)) ||
+        (btnRef.current && btnRef.current.contains(event.target as Node))
+      ) {
+        setIsOpen((prev) => !prev);
       }
     };
 
@@ -55,8 +61,8 @@ export const Header = () => {
           </a>
           <div className="lg:hidden">
             <button
+              ref={btnRef}
               className="flex justify-center items-center rounded-lg bg-smokyHarbor text-white cursor-pointer py-3 px-4"
-              onClick={() => setIsOpen((prev) => !prev)}
             >
               <HamburgerIcon />
             </button>

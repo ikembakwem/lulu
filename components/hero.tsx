@@ -31,7 +31,7 @@ export const Hero = () => {
         </div>
         <div className="z-[2]">
           <Container>
-            <div className="p-4 sm:p-10">
+            <div className="mt-10 py-6 px-3 sm:p-10">
               <div className="grid grid-cols-2 gap-x-4 mt-4">
                 <HeroCard data={cardsData[0]} />
                 <HeroCard data={cardsData[1]} />
