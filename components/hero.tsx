@@ -35,6 +35,20 @@ export const Hero = () => {
               <HeroCard data={cardsData[0]} imgWidth="not-full" />
               <HeroCard data={cardsData[1]} />
             </div>
+            <div className="pt-4">
+              <span>Terms apply</span>
+              <div>
+                <a href="#">SIGN UP FOR HULU ONLY</a>
+              </div>
+              <div>
+                <div>
+                  <strong>VIEW MORE PLANS</strong>
+                </div>
+                <a href="#">
+                  <button>Arrow down</button>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
