@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { Container } from "./container";
 import { HeroCardData, HeroCard } from "./hero-card";
 
 const cardsData: HeroCardData[] = [
@@ -31,21 +30,40 @@ export const Hero = () => {
         </div>
         <div className="z-[2]">
           <div className="mt-10 md:mt-14 p-6 xs:p-10 md:p-0 mx-auto md:max-w-[570px] lg:max-w-[670px]">
-            <div className="grid grid-cols-2 gap-x-4 md:gap-x-8 pt-4">
+            <div className="grid grid-cols-2 gap-x-4 md:gap-x-8 py-4">
               <HeroCard data={cardsData[0]} imgWidth="not-full" />
               <HeroCard data={cardsData[1]} />
             </div>
-            <div className="pt-4">
-              <span>Terms apply</span>
-              <div>
-                <a href="#">SIGN UP FOR HULU ONLY</a>
+            <div className="flex flex-col items-center mt-4 text-xs leading-snug text-white/70 w-full mx-auto">
+              <span>
+                <button className="text-xs cursor-pointer underline">
+                  Terms apply
+                </button>
+              </span>
+              <br />
+              <br />
+              <div className="pt-3 text-base">
+                <a
+                  href="#"
+                  className="text-white border-b border-whte font-medium cursor-pointer"
+                >
+                  SIGN UP FOR HULU ONLY
+                </a>
               </div>
-              <div>
-                <div>
+              <br />
+              <br />
+              <div className="flex flex-col items-center">
+                <div className="mx-auto text-xs pb-3 text-white">
                   <strong>VIEW MORE PLANS</strong>
                 </div>
                 <a href="#">
-                  <button>Arrow down</button>
+                  <button className="inline-flex items-center justify-center border border-[#f9f7f9] h-16 w-16 rounded-full overflow-hidden cursor-pointer">
+                    <img
+                      src="/assets/icons/arrow_down.svg"
+                      alt=""
+                      className="w-3 h-3"
+                    />
+                  </button>
                 </a>
               </div>
             </div>
